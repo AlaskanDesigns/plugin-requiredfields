@@ -24,6 +24,7 @@ Plugin update URI: required-fields
 
     // NO NEED TO MODIFY ANYTHING ON THIS FILE
     function requiredreg_save($userId) {
+        require_once LIB_PATH . 'osclass/UserActions.php';
         $userActions = new UserActions(false);
         $input = $userActions->prepareData(false) ;
         User::newInstance()->update($input, array('pk_i_id' => $userId)) ;
@@ -42,5 +43,5 @@ Plugin update URI: required-fields
 
     // run ONCE the user is registered
     osc_add_hook('user_register_completed', 'requiredreg_save');
-    
+
 ?>
