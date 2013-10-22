@@ -3,7 +3,7 @@
 Plugin Name: Required Fields at Registration
 Plugin URI: http://www.osclass.org/
 Description: Require more fields at registration process
-Version: 1.0.5
+Version: 1.0.6
 Author: OSClass
 Author URI: http://www.osclass.org/
 Short Name: requiredreg
